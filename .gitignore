@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET
+bin/
+obj/
+*.db-shm
+*.db-wal
+
+# Node/Vue/Vite
+node_modules/
+dist/
+.env
+.env.*
+
+# Logs
+*.log
+
+# System
+Thumbs.db
+.DS_Store
+
+# Optional IDE
+.idea/
+.vscode/

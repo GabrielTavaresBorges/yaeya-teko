@@ -1,0 +1,6 @@
+@YaeyaDevLabs.Teko.API_HostAddress = http://localhost:5241
+
+GET {{YaeyaDevLabs.Teko.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
