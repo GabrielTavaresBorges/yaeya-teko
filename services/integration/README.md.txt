@@ -1,4 +1,3 @@
-md
 # Integrações — Serviços de Saúde
 
 Esta pasta é destinada às **integrações com sistemas externos**, especialmente voltadas para o setor da saúde.
