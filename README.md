@@ -29,14 +29,33 @@ Evitar acúmulo de papéis e perda de informações médicas importantes ao:
 ## 📂 Estrutura do projeto
 
 ```bash
-/teko
-├── backend/
-│   ├── Teko.API/            # Camada de apresentação (Web API)
-│   ├── Teko.Application/    # Casos de uso
-│   ├── Teko.Domain/         # Entidades e regras de negócio
-│   └── Teko.Infrastructure/ # Acesso a dados, serviços externos
-│
-├── frontend/
-│   └── teko-UI/            # Vue 3 com TypeScript (SPA)
-│
-└── README.md
+# 🧠 Yaeya DevLabs — Estrutura do Projeto
+
+Este repositório contém a arquitetura da aplicação **Yaeya DevLabs**, focada em centralizar e organizar o histórico médico do usuário de forma moderna, segura e acessível.
+
+---
+
+## 📁 Estrutura de Diretórios
+
+```txt
+/TEKO
+├── src/                                # Backend com arquitetura limpa (API, domínio, aplicação, infraestrutura)
+│   ├── YaeyaDevLabs.Teko.API/            # Camada de apresentação via Web API
+│   ├── YaeyaDevLabs.Teko.Application/    # Casos de uso e lógica de aplicação
+│   ├── YaeyaDevLabs.Teko.Domain/         # Entidades e regras de negócio
+│   └── YaeyaDevLabs.Teko.Infrastructure/ # Acesso a dados e serviços externos
+
+├── ui/                                 # Interfaces gráficas para o usuário
+│   └── web/
+│       └── YaeyaDevLabs.Teko.UI.Web/     # SPA com Vue 3 + TypeScript + Vuetify
+│            └── [README.md]              # Explicação da camada de apresentação web
+│   └── mobile/
+│       └── [README.md](ui/mobile/README.md)  # Interface mobile planejada para futuro desenvolvimento
+
+├── services/                           # Serviços externos e suportes complementares
+│   └── integrations/                     # Integrações com sistemas da área da saúde - Health Information Systems
+│       └── [README.md]                   # Explicações das integrações clínicas
+│   └── monitoring/
+│       └── [README.md]                   # Planejamento de observabilidade e métricas da aplicação
+
+└── README.md                           # Este arquivo — visão geral do repositório
