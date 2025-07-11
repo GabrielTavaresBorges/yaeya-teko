@@ -29,14 +29,20 @@ Evitar acúmulo de papéis e perda de informações médicas importantes ao:
 ## 📂 Estrutura do projeto
 
 ```bash
-/teko
-├── backend/
-│   ├── Teko.API/            # Camada de apresentação (Web API)
-│   ├── Teko.Application/    # Casos de uso
-│   ├── Teko.Domain/         # Entidades e regras de negócio
-│   └── Teko.Infrastructure/ # Acesso a dados, serviços externos
+/TEKO
+├── src/
+│   ├── YaeyaDevLabs.Teko.API/            # Camada de apresentação (Web API)
+│   ├── YaeyaDevLabs.Teko.Application/    # Casos de uso (regras de negócio do sistema)
+│   ├── YaeyaDevLabs.Teko.Domain/         # Entidades e lógica de domínio
+│   └── YaeyaDevLabs.Teko.Infrastructure/ # Infraestrutura e serviços externos
 │
-├── frontend/
-│   └── teko-UI/            # Vue 3 com TypeScript (SPA)
+├── ui/
+│   └── web/
+│       └── YaeyaDevLabs.Teko.UI.Web/     # Vue 3 + TypeScript (SPA com Vite, pnpm, Pinia, Vuetify 3)
+│            └── README.md                # Explicação da camada de apresentação para acesso via web
 │
-└── README.md
+├── services/
+│   └── integrations/                     # Futuras integrações com sistemas da Health Information Systems
+│       └── README.md                     # Explicação e planos para integrações clínicas 
+│
+└── README.md                             # Descrição geral do projeto
