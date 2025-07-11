@@ -1,0 +1,39 @@
+# ⚙️ Pastas de IDEs
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 🔄 Pastas de build e dependências
+bin/
+obj/
+node_modules/
+dist/
+build/
+
+# ⚠️ Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# 📄 Arquivos de ambiente
+.env
+*.env.*
+
+# 🔒 Segurança
+*.key
+*.pem
+
+# 🧪 Test output
+TestResults/
+coverage/
+
+# 📦 Arquivos de pacote
+*.nupkg
+*.tgz
+
+# 💻 Sistema
+.DS_Store
+Thumbs.db
