@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "YaeyaDevLabs.Teko.Domain/1.0.0": {
+        "runtime": {
+          "YaeyaDevLabs.Teko.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "YaeyaDevLabs.Teko.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

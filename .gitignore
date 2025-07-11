@@ -1,32 +1,45 @@
-# Visual Studio
+# ⚙️ Pastas de IDEs
 .vs/
+.idea/
+.vscode/
+
+# 🔄 Pastas de build e dependências
+bin/
+obj/
+node_modules/
+dist/
+build/
+*.db-shm
+*.db-wal
+
+# ⚠️ Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# 📄 Arquivos de ambiente
+.env
+*.env.*
+
+# 🔒 Segurança
+*.key
+*.pem
+
+# 🧪 Test output
+TestResults/
+coverage/
+
+# 📦 Arquivos de pacote
+*.nupkg
+*.tgz
+.gitkeep
+
+# 💻 Sistema
+.DS_Store
+Thumbs.db
+
+# Outros opcionais
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-
-# .NET
-bin/
-obj/
-*.db-shm
-*.db-wal
-
-# Node/Vue/Vite
-node_modules/
-dist/
-.env
-.env.*
-
-# Logs
-*.log
-
-# System
-Thumbs.db
-.DS_Store
-
-# Optional IDE
-.idea/
-.vscode/
-
-# Others
-.gitkeep
