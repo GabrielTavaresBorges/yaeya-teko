@@ -7,15 +7,20 @@
 bin/
 obj/
 node_modules/
+.vite/
 dist/
 build/
 *.db-shm
 *.db-wal
+*.tsbuildinfo
 
 # ⚠️ Logs e arquivos temporários
 *.log
 *.tmp
 *.bak
+*.cache
+*.ps1
+*.CMD
 
 # 📄 Arquivos de ambiente
 .env
@@ -28,6 +33,7 @@ build/
 # 🧪 Test output
 TestResults/
 coverage/
+.playwright/
 
 # 📦 Arquivos de pacote
 *.nupkg
@@ -37,6 +43,14 @@ coverage/
 # 💻 Sistema
 .DS_Store
 Thumbs.db
+
+# 🎯 Arquivos gerados por .NET
+**/obj/
+**/bin/
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
+*.AssemblyReference.cache
+*.cache.json
 
 # Outros opcionais
 *.suo
