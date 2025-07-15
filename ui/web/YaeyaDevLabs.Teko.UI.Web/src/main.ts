@@ -1,5 +1,3 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -16,10 +14,23 @@ import * as directives from 'vuetify/directives'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import '@mdi/font/css/materialdesignicons.css'
 
+// 🔧 Cria a instância do Vuetify com componentes, diretivas e ícones
+const vuetify = createVuetify({
+  components,
+  directives,
+  icons: {
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
+})
+
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-//app.use(vuetify) tema dark se precisar
+app.use(vuetify)
 
 app.mount('#app')
