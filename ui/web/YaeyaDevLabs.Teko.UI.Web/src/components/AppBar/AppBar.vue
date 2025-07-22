@@ -1,7 +1,15 @@
+<script setup lang="ts">
+// Aqui você pode adicionar lógica futura, como abrir modais ou menus
+</script>
+
+<style scoped>
+/* Estilos extras, se quiser personalizar o espaçamento ou comportamento */
+</style>
+
 <template>
-  <v-app-bar flat color="primary" :elevation="2">
-    <v-app-bar-nav-icon />
-    
+  <v-app-bar flat color="#2C1C30" :elevation="2">
+    <v-app-bar-nav-icon @click="$emit('toggle-drawer')" />
+
     <!-- Título -->
     <v-toolbar-title class="text-white">YΛΞYΛ</v-toolbar-title>
     <v-spacer />
@@ -22,11 +30,3 @@
     </v-btn>
   </v-app-bar>
 </template>
-
-<script setup lang="ts">
-// Aqui você pode adicionar lógica futura, como abrir modais ou menus
-</script>
-
-<style scoped>
-/* Estilos extras, se quiser personalizar o espaçamento ou comportamento */
-</style>
